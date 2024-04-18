@@ -22,12 +22,6 @@ public class Teacher {
     private int courseCode;
     public static List<Teacher> teacherList = new ArrayList<>();
 
-//    public Teacher(int id, String name, int age, String address, int courseId) {
-//        super(id, name, age, address);
-//        this.courseId = courseId;
-//        teacherList = new ArrayList<>();
-//    }
-
     //we are assuming that a teacher only takes a course
     public static void addTeacherToCourse(int teacherId, int courseCode,  List<Teacher> teacherList){
         boolean isPresent = false;
@@ -60,8 +54,6 @@ public class Teacher {
     }
 
     public static void printTeacherCoursesList() {
-        // Print each item of the studentCoursesList on a new line
-        // enhanced for loop
         for (Teacher teacher : Teacher.teacherList) {
             System.out.println(teacher);
         }

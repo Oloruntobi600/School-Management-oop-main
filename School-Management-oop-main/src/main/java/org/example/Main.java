@@ -81,12 +81,6 @@ public class Main {
         System.out.println(StudentCourses.enrolledStudentList);
         studentCourses.printStudentCoursesList(StudentCourses.enrolledStudentList);
 
-//        Student.enrollStudentCourses(1, 100,studentCourseList );
-//        Student.enrollStudentCourses(2, 101,studentCourseList );
-//        Student.enrollStudentCourses(3, 102,studentCourseList );
-//        System.out.println("6. Testing how to enroll studentId: " );
-//        System.out.println(Student.getStudentList());
-
         //testing removing of courses for a known student because you need to pass-in the courseid and then studentid
         System.out.println("7. Testing removing of courses for a known student");
         studentCourses.removeCourse(1, 100, StudentCourses.enrolledStudentList);
@@ -99,9 +93,5 @@ public class Main {
         studentCourses.gradeStudent(3, 102, 80, StudentCourses.enrolledStudentList);
         studentCourses.printStudentCoursesList(StudentCourses.enrolledStudentList);
 
-
-
-//        System.out.println(studentCourses);
-//        System.out.println(studentCourseList);
     }
 }
